@@ -1,0 +1,39 @@
+/* Css для кружочков навигации по странице */
+
+.point {
+    position: fixed;
+    margin-left: 0.9375rem;
+    margin-top: 18.75rem;
+    z-index: 100;
+    right: 15px;
+  }
+  .point li {
+    margin-bottom: 0.3125rem;
+    position: relative;
+  }
+  .point li::before {
+    content: "";
+    height: 0.375rem;
+    width: 0.375rem;
+    border-radius: 50%;
+    background: #292929;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .point li a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 0.0625rem solid transparent;
+    display: block;
+  }
+  .point li a.active {
+    border-color: #e01f3d;
+  }
+  .point--shadowed {
+    background: aqua;
+    border-radius: 50%;
+  }

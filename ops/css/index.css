@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+section {
+    height: 100vh;
+}
+
+.red {
+    background: red;
+}
+.yellow {
+    background: yellow;
+}
+.green {
+  background: green;
+}
+
+  .wrapper {
+    height: 100%;
+    overflow: hidden;
+  }
+  .maincontent {
+    height: 100%;
+    transition: transform 1s; /* Анимация: время */
+    will-change: transform;/* Оптимизируем браузер для анимации. Даём ему заранее понять, что будет в анимации */
+  }
+  .fixed-menu-shadowed {
+    background: #fff;
+  }
+  
+  .fixed-menu_active {
+    border: #e01f3d 1px solid;
+    border-radius: 50%;
+  }
